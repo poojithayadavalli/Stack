@@ -18,7 +18,7 @@ Input:
 1 2 2 2 3 3 3
 
 Output:
-6
+5
 
 Input:
 5
