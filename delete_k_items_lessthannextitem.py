@@ -10,15 +10,16 @@ Constraints:
 1<=k<=100
 
 Input:
-first line contains elements of array
-Secondline indicates the integer k
+First line indicates length of array
+Secondline contains elements of array
+Thirdline indicates the integer k
 
 Output:
 Print the arrray after deleting k such elements
 
 Example:
 Input:
-
+3
 3 100 1
 3
 
@@ -26,6 +27,7 @@ Output:
 100 1
 
 Input:
+5
 20 10 25 30 40
 2
 
@@ -37,6 +39,7 @@ First we delete 10 because it follows arr[i] < arr[i+1].
 Then we delete 20 because 25 is moved next to it and it also starts following the condition.
 
 Input:
+5
 23 45 11 77 18
 3
 
@@ -59,6 +62,7 @@ def deleteElements(arr, n, k):
         st.append(arr[i]) 
         top += 1
     print(*st)
+n=int(input())
 arr=list(map(int,input().split()))
 n=len(arr)
 k=int(input())
